@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetails">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Age"
+        android:layout_marginTop="47dp"
+        android:text="@string/addname" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Gender"
+        android:layout_marginTop="75dp"
+        android:text="@string/addage" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="106dp"
+        android:text="@string/addgender" />
+
+    <Spinner
+        android:id="@+id/findgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Gender"
+        android:layout_toEndOf="@+id/Gender"
+        android:entries="@array/gendertypes"></Spinner>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="14dp"
+        android:autoText="true"
+        android:text="@string/filldetails" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="137dp"
+        android:text="@string/giveaddress" />
+
+    <TextView
+        android:id="@+id/college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="163dp"
+        android:text="@string/mycollege" />
+
+    <Spinner
+        android:id="@+id/findbranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/branch"
+        android:layout_toEndOf="@+id/Gender"
+        android:entries="@array/branchtypes"></Spinner>
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/entercollege"
+        android:text="@string/mybranch" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="184dp"
+        android:text="@string/submitdetails" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="225dp"
+        android:text="@string/myyear" />
+
+    <Spinner
+        android:id="@+id/myyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/year"
+        android:layout_toEndOf="@+id/Gender"
+        android:entries="@array/yeartypes"></Spinner>
+
+    <EditText
+        android:id="@+id/entername"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_toEndOf="@+id/name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/enterage"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Age"
+        android:layout_toEndOf="@+id/name"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/enteraddress"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/college"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginBottom="-163dp"
+        android:layout_marginEnd="-9dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/entercollege"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/college"
+        android:layout_toEndOf="@+id/address" />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/name"
+        android:layout_toEndOf="@+id/Gender">
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

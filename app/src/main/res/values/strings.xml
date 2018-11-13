@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">LogIn</string>
+    <string name="branchname">Branch</string>
+    <string name="addname">Name:</string>
+    <string name="addage">Age:</string>
+    <string name="addgender">Gender:</string>
+    <string name="filldetails">Fill In Your Details</string>
+    <string name="giveaddress">Address:</string>
+    <string name="mycollege">College:</string>
+    <string name="mybranch">Branch:</string>
+    <string name="submitdetails">Submit</string>
+    <string name="myyear">Year:</string>
+
+
+    <string-array name="gendertypes">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="branchtypes">
+        <item>CS</item>
+        <item>Mechanical</item>
+        <item>Electrical</item>
+        <item>Civil</item>
+        <item>Electronics</item>
+        <item>IT</item>
+    </string-array>
+
+    <string-array name="yeartypes">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+    </string-array>
+
+
+</resources>
