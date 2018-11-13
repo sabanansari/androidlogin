@@ -10,6 +10,15 @@
     <string name="mybranch">Branch:</string>
     <string name="submitdetails">Submit</string>
     <string name="myyear">Year:</string>
+    <string name="user_name">Name</string>
+    <string name="ageee">Age</string>
+    <string name="addressee">Address</string>
+    <string name="collg">College</string>
+    <string name="userr">User Details</string>
+    <string name="naam">Name:</string>
+    <string name="agge">Age:</string>
+    <string name="addd">Address:</string>
+    <string name="colleg">College:</string>
 
 
     <string-array name="gendertypes">

@@ -3,6 +3,7 @@ package com.example.my.login;
 import android.app.Activity;
 
 import android.content.Intent;
+import android.hardware.camera2.params.BlackLevelPattern;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -106,6 +107,45 @@ public class MainActivity extends Activity {
             }
 
         });
+
+        TextView email;
+
+        email= new TextView(this);
+        email.setText("Email:");
+        RelativeLayout.LayoutParams emailin = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
+        emailin.addRule(RelativeLayout.LEFT_OF,username.getId());
+         email.setTextColor(Color.BLACK);
+
+        TextView pass;
+
+        pass= new TextView(this);
+        pass.setText("Password:");
+        RelativeLayout.LayoutParams passin= new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
+
+        passin.addRule(RelativeLayout.LEFT_OF,password.getId());
+        pass.setTextColor(Color.BLACK);
+
+        TextView sign;
+        sign=new TextView(this);
+        sign.setText("Sign In");
+
+        RelativeLayout.LayoutParams signin = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
+
+        signin.addRule(RelativeLayout.ABOVE,username.getId());
+        sign.setTextColor(Color.BLACK);
+
+
+
+
     }
 
     public void openUserDetails() {
