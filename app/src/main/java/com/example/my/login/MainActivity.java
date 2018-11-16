@@ -25,7 +25,23 @@ public class MainActivity extends Activity {
         Button myButton = new Button(this);
         TextView Email= new TextView(this);
         TextView Password= new TextView(this);
+        TextView SignIn= new TextView(this);
 
+
+        SignIn.setText("Sign In");
+        SignIn.setTextColor(Color.BLACK);
+        SignIn.setTextSize(30);
+
+
+        RelativeLayout.LayoutParams signindetails = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
+
+        signindetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        signindetails.addRule(RelativeLayout.ABOVE,Email.getId());
+
+        myLayout.addView(SignIn,signindetails);
 
         Email.setText("Email");
         Email.setTextColor(Color.BLACK);
@@ -72,6 +88,8 @@ public class MainActivity extends Activity {
         PasswordDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
         myButton.setId(1);
         username.setId(2);
+        SignIn.setId(3);
+
 
         RelativeLayout.LayoutParams usernameDetails = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
@@ -99,7 +117,7 @@ public class MainActivity extends Activity {
         usernameDetails.setMargins(0, 450, 0, 50);
         myLayout.addView(username, usernameDetails);
 
-        setContentView(myLayout);
+
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,7 +126,7 @@ public class MainActivity extends Activity {
 
         });
 
-        TextView email;
+   /*  TextView email;
 
         email= new TextView(this);
         email.setText("Email:");
@@ -118,6 +136,8 @@ public class MainActivity extends Activity {
         );
         emailin.addRule(RelativeLayout.LEFT_OF,username.getId());
          email.setTextColor(Color.BLACK);
+
+         myLayout.addView(email,emailin);
 
         TextView pass;
 
@@ -129,22 +149,16 @@ public class MainActivity extends Activity {
         );
 
         passin.addRule(RelativeLayout.LEFT_OF,password.getId());
+        passin.addRule(RelativeLayout.BELOW,SignIn.getId());
+        passin.addRule(RelativeLayout.ABOVE,myButton.getId());
         pass.setTextColor(Color.BLACK);
 
-        TextView sign;
-        sign=new TextView(this);
-        sign.setText("Sign In");
-
-        RelativeLayout.LayoutParams signin = new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT
-        );
-
-        signin.addRule(RelativeLayout.ABOVE,username.getId());
-        sign.setTextColor(Color.BLACK);
+        myLayout.addView(pass,passin);  */
 
 
 
+
+        setContentView(myLayout);
 
     }
 

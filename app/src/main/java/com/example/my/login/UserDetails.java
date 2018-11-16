@@ -18,7 +18,7 @@ public class UserDetails extends AppCompatActivity {
         Button myButton= (Button) findViewById(R.id.button);
 
 
-        String st;
+
 
 
        myButton.setOnClickListener(new View.OnClickListener() {
