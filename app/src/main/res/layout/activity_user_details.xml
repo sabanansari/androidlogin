@@ -19,9 +19,8 @@
         android:id="@+id/Age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/Gender"
-        android:layout_marginTop="75dp"
+        android:layout_below="@+id/entername"
         android:text="@string/addage" />
 
     <TextView
@@ -34,13 +33,12 @@
         android:layout_marginTop="106dp"
         android:text="@string/addgender" />
 
-    <Spinner
+    <EditText
         android:id="@+id/findgender"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Gender"
-        android:layout_toEndOf="@+id/Gender"
-        android:entries="@array/gendertypes"></Spinner>
+        android:layout_alignBaseline="@+id/Gender"
+        android:layout_toEndOf="@+id/Gender"></EditText>
 
     <TextView
         android:id="@+id/details"
@@ -71,13 +69,12 @@
         android:layout_marginTop="163dp"
         android:text="@string/mycollege" />
 
-    <Spinner
+    <EditText
         android:id="@+id/findbranch"
-        android:layout_width="wrap_content"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/branch"
-        android:layout_toEndOf="@+id/Gender"
-        android:entries="@array/branchtypes"></Spinner>
+        android:layout_alignBaseline="@+id/branch"
+        android:layout_toEndOf="@+id/Gender"></EditText>
 
     <TextView
         android:id="@+id/branch"
@@ -105,13 +102,12 @@
         android:layout_marginTop="225dp"
         android:text="@string/myyear" />
 
-    <Spinner
+    <EditText
         android:id="@+id/myyear"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/year"
-        android:layout_toEndOf="@+id/Gender"
-        android:entries="@array/yeartypes"></Spinner>
+        android:layout_below="@+id/branch"
+        android:layout_toEndOf="@+id/name"></EditText>
 
     <EditText
         android:id="@+id/entername"
@@ -123,7 +119,7 @@
 
     <EditText
         android:id="@+id/enterage"
-        android:layout_width="47dp"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/Age"
         android:layout_toEndOf="@+id/name"
