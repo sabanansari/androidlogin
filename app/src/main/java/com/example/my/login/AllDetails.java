@@ -11,8 +11,8 @@ public class AllDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_details);
 
-        TextView tn,ta,tc,tadd;
-        String st,sa,sc,sadd;
+        TextView tn,ta,tc,tadd,tgender,tbranch,tyear;
+        String st,sa,sc,sadd,sbranch,syear,sgender;
 
         tn=findViewById(R.id.nm);
         st= getIntent().getExtras().getString("Name");
@@ -29,6 +29,20 @@ public class AllDetails extends AppCompatActivity {
         tadd=findViewById(R.id.add);
         sadd=getIntent().getExtras().getString("Address");
         tadd.setText(sadd);
+
+        tgender=findViewById(R.id.tgender);
+        sgender=getIntent().getExtras().getString("Gender");
+        tgender.setText(sgender);
+
+        tbranch=findViewById(R.id.tbranch);
+        sbranch=getIntent().getExtras().getString("Branch");
+        tbranch.setText(sbranch);
+
+        tyear=findViewById(R.id.tyear);
+        syear=getIntent().getExtras().getString("Year");
+        tyear.setText(syear);
+
+
 
 
 

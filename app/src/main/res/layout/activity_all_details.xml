@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/ag"
-        android:layout_marginTop="97dp"
+        android:layout_marginTop="57dp"
         android:text="@string/user_name"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
@@ -23,8 +23,8 @@
         android:id="@+id/ag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/age"
-        android:layout_toStartOf="@+id/textView"
+        android:layout_alignStart="@+id/add"
+        android:layout_alignTop="@+id/age"
         android:text="@string/ageee"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
@@ -35,8 +35,8 @@
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/clg"
-        android:layout_alignTop="@+id/addr"
+        android:layout_alignBottom="@+id/addr"
+        android:layout_alignStart="@+id/tgender"
         android:text="@string/addressee"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
@@ -49,8 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/cllge"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="107dp"
+        android:layout_alignStart="@+id/tbranch"
         android:text="@string/collg"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
@@ -63,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="21dp"
         android:text="@string/userr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +75,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="41dp"
-        android:layout_marginTop="141dp"
+        android:layout_marginTop="104dp"
         android:text="Age:"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="91dp" />
@@ -85,9 +84,9 @@
         android:id="@+id/addr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/cllge"
+        android:layout_alignEnd="@+id/naaam"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="173dp"
+        android:layout_marginTop="192dp"
         android:text="Address:"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="128dp" />
@@ -96,9 +95,9 @@
         android:id="@+id/cllge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/naaam"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="214dp"
+        android:layout_alignStart="@+id/addr"
+        android:layout_marginTop="233dp"
         android:text="College:"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="169dp" />
@@ -110,6 +109,65 @@
         android:layout_alignBottom="@+id/nm"
         android:layout_alignStart="@+id/age"
         android:text="Name:" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tgender"
+        android:layout_alignEnd="@+id/naaam"
+        android:text="Gender:" />
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/addr"
+        android:layout_marginBottom="217dp"
+        android:text="Branch:" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tyear"
+        android:layout_alignStart="@+id/age"
+        android:text="Year:" />
+
+    <EditText
+        android:id="@+id/tgender"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ag"
+        android:layout_toStartOf="@+id/textView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tbranch"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/branch"
+        android:layout_alignStart="@+id/tyear"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tyear"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nm"
+        android:layout_marginBottom="160dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+
+
+
+
 
 
 

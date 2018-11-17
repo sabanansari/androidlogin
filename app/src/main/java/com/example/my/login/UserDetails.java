@@ -33,12 +33,16 @@ public class UserDetails extends AppCompatActivity {
     }
 
    public void openDetails(){
-        String st,sa,sadd,sc;
-       EditText nm,ag,add,clg;
+        String st,sa,sadd,sc,sgender,sbranch,syear;
+       EditText nm,ag,add,clg,gen,br,yr;
        nm=findViewById(R.id.entername);
        ag=findViewById(R.id.enterage);
        add=findViewById(R.id.enteraddress);
        clg=findViewById(R.id.entercollege);
+       gen=findViewById(R.id.findgender);
+       br=findViewById(R.id.findbranch);
+       yr=findViewById(R.id.findyear);
+
 
 
        Intent intent= new Intent(UserDetails.this,AllDetails.class);
@@ -50,6 +54,13 @@ public class UserDetails extends AppCompatActivity {
        intent.putExtra("Address",sadd);
        sc=clg.getText().toString();
        intent.putExtra("College",sc);
+
+       sgender=gen.getText().toString();
+       intent.putExtra("Gender",sgender);
+       sbranch=br.getText().toString();
+       intent.putExtra("Branch",sbranch);
+       syear=yr.getText().toString();
+       intent.putExtra("Year",syear);
 
        startActivity(intent);
 

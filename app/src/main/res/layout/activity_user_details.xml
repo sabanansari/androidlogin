@@ -103,7 +103,7 @@
         android:text="@string/myyear" />
 
     <EditText
-        android:id="@+id/myyear"
+        android:id="@+id/findyear"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/branch"
